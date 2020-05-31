@@ -1,7 +1,9 @@
-import React from "react";
+import React, { useContext } from "react";
 import "./App.css";
 import Button from "./component/Button";
 import Display from "./component/Display"
+import { Dataprovider } from "./DataContext";
+
 function App() {
 
 	const data = [{
@@ -91,11 +93,12 @@ function App() {
 
 	return (
 		<div className="main">
-
-			<Display></Display>
-			<div className="buttonhoder">
-				{data.map((props) => <Button key={props.id} prop={props}></Button>)}
-			</div>
+			<Dataprovider>
+				<Display></Display>
+				<div className="buttonhoder">
+					{data.map((props) => <Button key={props.id} prop={props}></Button>)}
+				</div>
+			</Dataprovider>
 		</div>
 	);
 }

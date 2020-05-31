@@ -1,11 +1,18 @@
-import React from "react";
+import React, { useState, useContext } from "react";
 import "../App.css";
+import { DataContext } from "../DataContext";
 
 function Button({ prop }) {
-	const clicked = (id) => {
+
+	const [[inptxt, setinptxt], [fultxt, setfultxt]] = useContext(DataContext);
+
+
+	const clicked = ({ id, value }) => {
 		console.log(id);
+		setfultxt("history" + value);
+		setinptxt(id)
 	}
 
-	return (<button className={prop.class} onClick={() => clicked(prop.id)}>{prop.value}</button>);
+	return (<button className={prop.class} onClick={() => clicked(prop)}>{prop.value}</button>);
 }
 export default Button;
