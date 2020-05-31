@@ -21,9 +21,6 @@ function App() {
 		value: "AC",
 		class: "allclear"
 	}, {
-		value: "br",
-		id: "br1"
-	}, {
 		id: "7",
 		value: "7",
 		class: "number"
@@ -37,11 +34,8 @@ function App() {
 		class: "number"
 	}, {
 		id: "/",
-		value: "/",
+		value: "\u00f7",
 		class: "specific"
-	}, {
-		value: "br",
-		id: "br2"
 	}, {
 		id: "4",
 		value: 4,
@@ -56,11 +50,8 @@ function App() {
 		class: "number"
 	}, {
 		id: "*",
-		value: "X",
+		value: "\u00d7",
 		class: "specific"
-	}, {
-		value: "br",
-		id: "br3"
 	}, {
 		id: "1",
 		value: "1",
@@ -78,11 +69,8 @@ function App() {
 		value: "-",
 		class: "specific"
 	}, {
-		value: "br",
-		id: "br4"
-	}, {
 		id: ".",
-		value: ".",
+		value: "\u2219",
 		class: "number"
 	}, {
 		id: "0",
@@ -105,15 +93,8 @@ function App() {
 		<div className="main">
 
 			<Display></Display>
-			<div className="buttonhoder">{data.map((props) => {
-				if (props.value === "br") {
-					return (<br key={props.id} />);
-				}
-				else {
-					return (<Button key={props.id} prop={props}></Button>);
-				}
-			}
-			)}
+			<div className="buttonhoder">
+				{data.map((props) => <Button key={props.id} prop={props}></Button>)}
 			</div>
 		</div>
 	);
