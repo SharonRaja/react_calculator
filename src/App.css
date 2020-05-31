@@ -89,6 +89,7 @@ body{
 p{
 	display: block;
 	background: #ffffff;
+	height: 25%;
 	font-size: 1rem;
 	font-weight: 400;
 	text-align: end;
