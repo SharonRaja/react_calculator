@@ -1,38 +1,115 @@
-.App {
-  text-align: center;
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+button{
+	color: black;
+	background-color: #c0c0c0;
+	margin: 2px;
+	height: 2.5rem;
+	width: 23%;
+	font-size: 1rem;
+	font-weight: bold;
+	border: none;
+	outline: none;
+	border-radius: 5px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.number:hover{
+	background-color: #b0b0b0;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.number:active{
+	background-color: #a0a0a0;
 }
-
-.App-link {
-  color: #61dafb;
+.specific:hover{
+	background-color: #a0a0a0;
 }
+.specific{
+	color:black;
+	background: #909090;
+}
+.specific:hover{
+	background-color: #a0a0a0;
+}
+.specific:active{
+	background-color: #808080;
+}
+.allclear{
+	background: rgb(230, 47, 47);
+	color: white;
+}
+.allclear:hover{
+	background: rgb(230, 70, 70);
+}
+.allclear:active{
+	background: rgb(230, 90, 90);
+}
+.equal{
+	background: rgb(55, 55, 219);
+	color: white;
+}
+.equal:hover{
+	background: rgb(70, 70, 219);
+}
+.equal:active{
+	background: rgb(90, 90, 219);
+}
+body{
+	height: 100vh;
+	width: 100vw;
+	justify-content: center;
+	align-items: center;
+	display: flex;
+	/* background: green; */
+}
+.main{
+	background: #e0e0e0;
+	border-radius: 10px;
+}
+.buttonhoder{
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+	padding: 4px 12px 12px;
+	/* background: blue; */
+	display:flex;
+	justify-content: center;
+	justify-content: space-between;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+	
+.display{
+	width: 100%;
+	height: 90px;
+	display: block;
+	padding: 12px 12px 4px;
+}
+p{
+	display: block;
+	background: #ffffff;
+	font-size: 1rem;
+	font-weight: 400;
+	text-align: end;
+	padding: 0px 5px;
+	border: none;
+	/* border-left: 2px solid black;
+	border-right: 2px solid black;
+	border-top: 2px solid black; */
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px ;
+}
+.textbox{
+	width: 100%;
+	height: 75%;
+	text-align: end;
+	font-size: 2rem;
+	padding: 0px 5px;
+	outline: none;
+	border: none;
+	/* border-left: 2px solid black;
+	border-right: 2px solid black;
+	border-bottom: 2px solid black; */
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px ;
 }
