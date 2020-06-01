@@ -6,12 +6,8 @@ function Button({ prop }) {
 
 	const [[inptxt, setinptxt], [, setfultxt], [inpclass, setinpclass]] = useContext(DataContext);
 
-
+	// Funtion to handle button click
 	const clicked = ({ id }) => {
-		// console.log(id, fultxt);
-
-		// setfultxt(fultxt + value);
-		// setinptxt(id)
 		switch (id) {
 			case "1":
 			case "2":
@@ -61,6 +57,8 @@ function Button({ prop }) {
 
 	}
 
-	return (<button className={prop.class} onClick={() => clicked(prop)}>{prop.value}</button>);
+	return (
+		<button className={prop.class} onClick={() => clicked(prop)}>{prop.value}</button>
+	);
 }
 export default Button;

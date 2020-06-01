@@ -5,7 +5,7 @@ import Display from "./component/Display"
 import { Dataprovider } from "./DataContext";
 
 function App() {
-
+	// necessary data to build button and orther operation
 	const data = [{
 		id: "(",
 		value: "(",
@@ -89,7 +89,6 @@ function App() {
 	}
 
 	];
-
 
 	return (
 		<div className="main">

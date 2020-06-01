@@ -5,6 +5,8 @@ import { DataContext } from "../DataContext";
 function Display() {
 
      const [[inptxt, setinptxt], [fultxt], [inpclass,]] = useContext(DataContext);
+
+     // function to get input from the keyboard
      const keyin = (event) => {
           setinptxt(event.target.value);
      }
