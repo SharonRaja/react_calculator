@@ -4,7 +4,7 @@
   "icons": [
     {
       "src": "calculator192.ico",
-      "type": "image/png",
+      "type": "image/ico",
       "sizes": "192x192"
     }
   ],
