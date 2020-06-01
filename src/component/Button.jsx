@@ -34,7 +34,13 @@ function Button({ prop }) {
 				setinpclass("textbox");
 				break;
 			case "C":
-				setinptxt(inptxt.substring(0, inptxt.length - 1));
+				try {
+					setinptxt(inptxt.substring(0, inptxt.length - 1));
+				}
+				catch (e) {
+					setinptxt("");
+					setfultxt("");
+				}
 				break;
 			case "=":
 				let cal = 0;
