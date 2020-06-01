@@ -4,12 +4,12 @@ import { DataContext } from "../DataContext";
 
 function Display() {
 
-     const [[inptxt, setinptxt], [fultxt, setfultxt]] = useContext(DataContext);
+     const [[inptxt], [fultxt]] = useContext(DataContext);
 
      return (
           <div className="display">
                <p>{fultxt}</p>
-               <input type="text" className="textbox" name="inpbox" value={inptxt} placeholder="0" />
+               <input type="text" className="textbox" value={inptxt} onChange={() => null} placeholder="0" />
           </div>
      );
 }
