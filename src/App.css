@@ -114,5 +114,7 @@ p{
 	border-bottom: 1px solid rgb(55, 55, 219);
 	border-bottom-left-radius: 10px;
 	border-bottom-right-radius: 10px ;
-
+}
+.error{
+	color:rgb(230, 40, 40);
 }

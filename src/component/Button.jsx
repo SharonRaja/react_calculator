@@ -4,7 +4,7 @@ import { DataContext } from "../DataContext";
 
 function Button({ prop }) {
 
-	const [[inptxt, setinptxt], [, setfultxt]] = useContext(DataContext);
+	const [[inptxt, setinptxt], [, setfultxt], [inpclass, setinpclass]] = useContext(DataContext);
 
 
 	const clicked = ({ id }) => {
@@ -30,15 +30,14 @@ function Button({ prop }) {
 			case "-":
 			case "*":
 			case "/":
-				console.log(id);
 				setinptxt(inptxt + id);
 				break;
 			case "AC":
 				setinptxt("");
 				setfultxt("");
+				setinpclass("textbox");
 				break;
 			case "C":
-				console.log("clear");
 				setinptxt(inptxt.substring(0, inptxt.length - 1));
 				break;
 			case "=":
@@ -49,6 +48,7 @@ function Button({ prop }) {
 					setinptxt(cal);
 					setfultxt(`Ans = ${cal}`);
 				} catch (e) {
+					setinpclass(inpclass + " error");
 					setinptxt("Math error");
 				}
 
