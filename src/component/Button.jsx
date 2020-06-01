@@ -4,7 +4,7 @@ import { DataContext } from "../DataContext";
 
 function Button({ prop }) {
 
-	const [[inptxt, setinptxt], [setfultxt]] = useContext(DataContext);
+	const [[inptxt, setinptxt], [, setfultxt]] = useContext(DataContext);
 
 
 	const clicked = ({ id }) => {
@@ -34,7 +34,6 @@ function Button({ prop }) {
 				setinptxt(inptxt + id);
 				break;
 			case "AC":
-				console.log("All clear");
 				setinptxt("");
 				setfultxt("");
 				break;
