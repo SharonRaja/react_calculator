@@ -19,10 +19,10 @@ This project implements react's:
 ## Screenshots:
 
 ### Desktop
-![Desktop Screenshot](./screenshot\react_calculator_desktop.jpg "Desktop screenshot")
+![Desktop Screenshot](screenshot/react_calculator_desktop.jpg "Desktop screenshot")
 
 ### Moble
-![Moble Screenshot](./screenshot\react_calculator_mobile.jpg) "Moble screenshot"]
+![Moble Screenshot](screenshot/react_calculator_mobile.jpg "Moble screenshot")
 
 ## Setup
 
